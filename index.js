@@ -93,8 +93,8 @@ const allRules = {
   'style-prop-object': require('./lib/rules/style-prop-object'),
   'void-dom-elements-no-children': require('./lib/rules/void-dom-elements-no-children')
 };
-/* eslint-enable */
 
+/* eslint-enable */
 function filterRules(rules, predicate) {
   return fromEntries(entries(rules).filter((entry) => predicate(entry[1])));
 }
